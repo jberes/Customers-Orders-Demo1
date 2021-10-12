@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CustomersOrdersComponent } from './customers-orders/customers-orders.component';
 import { IgxGridModule, IgxActionStripModule, IgxNavbarModule, IgxButtonModule, IgxToggleModule, IgxIconModule, IgxNavigationDrawerModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FormsModule } from '@angular/forms';
     CustomersOrdersComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     HammerModule,
     AppRoutingModule,
