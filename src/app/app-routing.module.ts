@@ -4,12 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './error-routing/not-found/not-found.component';
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
-import { View1Component } from './view1/view1.component';
+import { CustomersOrdersComponent } from './customers-orders/customers-orders.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'view1', pathMatch: 'full' },
+  { path: '', redirectTo: 'customers-orders', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
-  { path: 'view1', component: View1Component, data: { text: 'View 1' } },
+  { path: 'customers-orders', component: CustomersOrdersComponent, data: { text: 'Customers-Orders' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

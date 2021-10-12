@@ -3,22 +3,22 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { IgxGridModule, IgxActionStripModule } from 'igniteui-angular';
-import { View1Component } from './view1.component';
+import { CustomersOrdersComponent } from './customers-orders.component';
 
-describe('View1Component', () => {
-  let component: View1Component;
-  let fixture: ComponentFixture<View1Component>;
+describe('CustomersOrdersComponent', () => {
+  let component: CustomersOrdersComponent;
+  let fixture: ComponentFixture<CustomersOrdersComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ View1Component ],
+      declarations: [ CustomersOrdersComponent ],
       imports: [ NoopAnimationsModule, FormsModule, IgxGridModule, IgxActionStripModule ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(View1Component);
+    fixture = TestBed.createComponent(CustomersOrdersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

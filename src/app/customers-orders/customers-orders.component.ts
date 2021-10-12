@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { NorthwindService } from '../services/northwind.service';
 
 @Component({
-  selector: 'app-view1',
-  templateUrl: './view1.component.html',
-  styleUrls: ['./view1.component.scss']
+  selector: 'app-customers-orders',
+  templateUrl: './customers-orders.component.html',
+  styleUrls: ['./customers-orders.component.scss']
 })
-export class View1Component implements OnInit {
+export class CustomersOrdersComponent implements OnInit {
   public northwindCustomers: any[] = [];
   public northwindOrders: any[] = [];
 
